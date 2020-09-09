@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "74f5b06b-8874-42eb-ad83-dc3ae3b41134",
+		"name": "Transaccion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idTransaccion\":\"TRX12351313\",\r\n  \"numeroCuentaPasarela\":\"ACH-3463\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment/api/v1/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"api",
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
